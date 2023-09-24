@@ -1,6 +1,44 @@
+import java.util.Scanner;
+
 //import java.util.*;
 public class patterns {
     public static void main(String[] args) {
+//        drawRectanglePattern();
+//        drawEquilateralTrianglePattern();
+//        drawSquareWithStar();
+        drawRightAngleTriangle();
+    }
+
+    private static void drawRightAngleTriangle() {
+        System.out.println("Please enter the no.of rows and columns");
+        Scanner scan = new Scanner(System.in);
+        int rows = scan.nextInt();
+        int cols = scan.nextInt();
+        for(int i= 0; i<rows; i++) {
+            for (int j= 0;j<=i;j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+    private static void drawSquareWithStar() {
+        System.out.println("Please enter the no.of rows and columns");
+        Scanner scan = new Scanner(System.in);
+        int rows = scan.nextInt();
+        int cols = scan.nextInt();
+        for(int i= 0; i<rows; i++) {
+            for (int j= 0;j<cols;j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+    private static void drawEquilateralTrianglePattern() {
+        System.out.println("Please Complete the coding to draw Equi triangle");
+    }
+    private static void drawRectanglePattern() {
         int n = 4;
         int m = 5;
 // outer loop
@@ -16,7 +54,6 @@ public class patterns {
             }
             System.out.println();
         }
-
     }
 }
 
